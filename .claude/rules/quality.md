@@ -17,3 +17,4 @@
 ## Git
 - **Never commit** — always let the user review and commit changes.
 - **Only push to `dev`** — never push to `prod` or any other branch.
+- **Keep commit messages short** — maximum 10 words.
