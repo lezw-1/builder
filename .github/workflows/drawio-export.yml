@@ -3,8 +3,6 @@ name: Export draw.io diagrams
 on:
   push:
     branches: [dev]
-    paths:
-      - "**.drawio"
 
 jobs:
   export:
