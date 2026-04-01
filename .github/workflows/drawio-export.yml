@@ -21,6 +21,7 @@ jobs:
           format: svg
           transparent: true
           output: assets/diagrams
+          action-mode: convert
 
       - name: Commit exported diagrams
         uses: stefanzweifel/git-auto-commit-action@v5
