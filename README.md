@@ -2,7 +2,7 @@
 
 Claude Code configuration with rules and skills for autonomous feature development.
 
-![Architecture](assets/diagrams/test.svg)
+![Architecture](assets/diagrams/diagram.svg)
 
 ## What is this?
 
