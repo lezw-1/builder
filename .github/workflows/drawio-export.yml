@@ -20,7 +20,7 @@ jobs:
         with:
           format: svg
           path: assets/diagrams
-          output: assets/diagrams
+          output: .
           remove-page-suffix: true
           transparent: true
           action-mode: all
