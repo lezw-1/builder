@@ -3,8 +3,6 @@ name: Export draw.io diagrams
 on:
   push:
     branches: [dev]
-    paths:
-      - "**.drawio"
 
 permissions:
   contents: write
@@ -15,22 +13,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install draw.io desktop
+      - name: Install draw.io
         run: |
           sudo apt-get install -y xvfb libgbm1 libasound2t64
           wget -q https://github.com/jgraph/drawio-desktop/releases/download/v24.7.5/drawio-amd64-24.7.5.deb
-          sudo dpkg -i drawio-amd64-24.7.5.deb || sudo apt-get install -f -y
+          sudo dpkg -i drawio-amd64-24.7.5.deb
 
-      - name: Export draw.io to SVG
+      - name: Export to SVG
         run: |
-          mkdir -p assets/diagrams
-          for f in $(find . -name "*.drawio"); do
-            name=$(basename "$f" .drawio)
-            xvfb-run drawio --export --format svg --output "assets/diagrams/${name}.svg" "$f"
-          done
+          mkdir -p assets/diagram
+          xvfb-run drawio --export --format svg --output assets/diagram/test.svg test.drawio
 
-      - name: Commit exported diagrams
+      - name: Commit SVG
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: export draw.io diagrams"
-          file_pattern: "assets/diagrams/*.svg"
+          commit_message: "chore: export draw.io to SVG"
+          file_pattern: "assets/diagram/test.svg"
