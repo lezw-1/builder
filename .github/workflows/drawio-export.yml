@@ -19,7 +19,7 @@ jobs:
         uses: rlespinasse/drawio-export-action@v2
         with:
           format: svg
-          output: assets/diagram
+          output: assets/diagrams
           remove-page-suffix: true
           transparent: true
 
