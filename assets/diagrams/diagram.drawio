@@ -37,10 +37,10 @@
         <mxCell id="8" edge="1" source="3" target="4" parent="1">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="9" edge="1" source="5" target="4" parent="1">
+        <mxCell id="9" edge="1" source="4" target="5" parent="1">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="10" edge="1" source="6" target="4" parent="1">
+        <mxCell id="10" edge="1" source="4" target="6" parent="1">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
       </root>
