@@ -14,21 +14,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+
+      - name: Install draw.io desktop
+        run: |
+          sudo apt-get install -y xvfb libgbm1 libasound2
+          wget -q https://github.com/jgraph/drawio-desktop/releases/download/v24.7.5/drawio-amd64-24.7.5.deb
+          sudo dpkg -i drawio-amd64-24.7.5.deb || sudo apt-get install -f -y
 
       - name: Export draw.io to SVG
-        uses: rlespinasse/drawio-export-action@v2
-        with:
-          format: svg
-          transparent: true
-          output: assets/diagrams
-
-      - name: List exported files
-        run: find . -name "*.svg" 2>/dev/null || echo "No SVG files found"
+        run: |
+          mkdir -p assets/diagrams
+          for f in $(find . -name "*.drawio"); do
+            name=$(basename "$f" .drawio)
+            xvfb-run drawio --export --format svg --output "assets/diagrams/${name}.svg" "$f"
+          done
 
       - name: Commit exported diagrams
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: export draw.io diagrams"
-          file_pattern: "**/*.svg"
+          file_pattern: "assets/diagrams/*.svg"
