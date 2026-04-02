@@ -16,9 +16,6 @@
         <mxCell id="5" edge="1" source="2" target="3" parent="1">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="6" edge="1" source="2" target="4" parent="1">
-          <mxGeometry relative="1" as="geometry"/>
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
