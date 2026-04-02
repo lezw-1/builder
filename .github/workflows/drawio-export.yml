@@ -24,8 +24,11 @@ jobs:
           transparent: true
           output: assets/diagrams
 
+      - name: List exported files
+        run: find . -name "*.svg" 2>/dev/null || echo "No SVG files found"
+
       - name: Commit exported diagrams
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: export draw.io diagrams"
-          file_pattern: "assets/diagrams/*.svg"
+          file_pattern: "**/*.svg"
