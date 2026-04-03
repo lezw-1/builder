@@ -12,7 +12,7 @@
         </mxCell>
         <!-- Claude Code container -->
         <mxCell id="4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;container=1;collapsible=0;verticalAlign=top;" value="Claude Code" vertex="1">
-          <mxGeometry height="200" width="200" x="390" y="90" as="geometry" />
+          <mxGeometry height="280" width="200" x="390" y="50" as="geometry" />
         </mxCell>
         <!-- Rules inside Claude Code -->
         <mxCell id="5" parent="4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Rules" vertex="1">
@@ -21,6 +21,10 @@
         <!-- Skills inside Claude Code -->
         <mxCell id="6" parent="4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Skills" vertex="1">
           <mxGeometry height="60" width="120" x="40" y="120" as="geometry" />
+        </mxCell>
+        <!-- Memory inside Claude Code -->
+        <mxCell id="9" parent="4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Memory" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="200" as="geometry" />
         </mxCell>
         <mxCell id="7" edge="1" parent="1" source="2" target="3">
           <mxGeometry relative="1" as="geometry" />
