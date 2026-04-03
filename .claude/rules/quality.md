@@ -37,6 +37,7 @@
 
 ## Git
 - **Never commit** — always let the user review and commit changes.
+- **Never add Co-Authored-By lines** — do not add any Claude or AI authorship to commit messages.
 - **Only push to `dev`** — never push to `prod` or any other branch.
 - **Keep commit messages short** — maximum 10 words.
 - **Pull requests from `dev` to `prod`** must be named `#1 dev`, `#2 dev`, etc. (incrementing number).

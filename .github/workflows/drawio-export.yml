@@ -32,6 +32,7 @@ jobs:
           path: assets
           output: .
           remove-page-suffix: true
+          scale: 2
           action-mode: all
 
       - name: Commit SVG and PNG
