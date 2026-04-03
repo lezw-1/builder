@@ -15,16 +15,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Export draw.io to SVG
-        uses: rlespinasse/drawio-export-action@v2
-        with:
-          format: svg
-          path: assets
-          output: .
-          remove-page-suffix: true
-          transparent: true
-          action-mode: all
-
       - name: Export draw.io to PNG
         uses: rlespinasse/drawio-export-action@v2
         with:
@@ -32,7 +22,7 @@ jobs:
           path: assets
           output: .
           remove-page-suffix: true
-          scale: 3
+          scale: 4
           action-mode: all
 
       - name: Commit SVG and PNG
