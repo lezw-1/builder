@@ -1,6 +1,6 @@
 ## Builder
 
-Claude Code configuration with rules and skills for autonomous feature development.
+Claude Code configuration with rules and skills for autonomous development.
 
 ![Architecture](assets/diagrams/diagram.svg)
 
