@@ -1,20 +1,24 @@
 # Quality
 
 ## Comments
+
 - Write comments to explain **why**, not what — the code itself should explain what.
 - Add comments for **non-obvious algorithms, workarounds, or external constraints**.
 - When using complex commands (e.g. Shell/Bash commands with more then 20 characters) then comment them
 
 ## Naming
+
 - Use **descriptive, intention-revealing names** — avoid abbreviations unless universally understood.
 - Functions should be named with a **verb**: `getUserById`, `calculateTotal`, `sendNotification`.
 - Boolean variables and functions should read as **true/false statements**: `isValid`, `hasPermission`, `canRetry`.
 
 ## Functions & Methods
+
 - Keep functions **short and focused** on a single task.
 - **Return early** to reduce nesting; avoid deeply nested if/else chains.
 
 ## 12-Factor App
+
 - **Codebase** — one repo, many deploys; never share code via copy-paste between apps.
 - **Dependencies** — explicitly declare and isolate all dependencies; assume nothing is pre-installed.
 - **Config** — store config in environment variables, never in code.
@@ -29,6 +33,7 @@
 - **Admin processes** — run admin/management tasks as one-off processes in the same environment as the app.
 
 ## Environment Consistency
+
 - Pin **exact versions** for all dependencies — avoid floating ranges (`^`, `~`, `*`).
 - Use a **lockfile** (`package-lock.json`, `poetry.lock`, etc.) and commit it.
 - Document required **runtime versions** (Node, Python, etc.) in `.nvmrc`, `.python-version`, or equivalent.
@@ -36,6 +41,7 @@
 - Prefer **containerised environments** (Docker, devcontainer) to eliminate "works on my machine" issues.
 
 ## Git
+
 - **Never commit** — always let the user review and commit changes.
 - **Never add Co-Authored-By lines** — do not add any Claude or AI authorship to commit messages.
 - **Only push to `dev`** — never push to `prod` or any other branch.
