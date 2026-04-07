@@ -8,7 +8,7 @@ Claude Code configuration with rules and skills for autonomous development.
 
 - `.claude/rules/` — passive instructions Claude always follows (coding style, principles, git workflow)
 - `.claude/skills/` — active workflows Claude executes on demand (PRD generation, feature conversion)
-- `.claude/memory/` — persistent context Claude retains across sessions (user preferences, project state)
+- `.claude/memory/` — persistent context Claude retains across sessions (user preferences, project state) - not handled by git
 - `script.sh` — executes Claude autonomously to build new features from a PRD
 
 ## How it works
