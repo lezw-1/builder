@@ -1,8 +1,6 @@
-## Builder
+## Contents
 
 Claude Code configuration with rules and skills for autonomous development.
-
-## Contents
 
 <img src="assets/diagrams/architecture.png" alt="Architecture" width="600" height="500" />
 
