@@ -2,7 +2,7 @@
 
 Claude Code configuration with rules and skills for autonomous development.
 
-<img src="assets/diagram/diagram.png" alt="Architecture" width="600" height="500" />
+<img src="assets/diagrams/diagram.png" alt="Architecture" width="600" height="500" />
 
 ## What is this?
 
