@@ -25,8 +25,8 @@ jobs:
           scale: 4
           action-mode: all
 
-      - name: Commit SVG and PNG
+      - name: Commit PNG
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: export draw.io to SVG and PNG"
-          file_pattern: "assets/**/*.svg assets/**/*.png"
+          commit_message: "chore: export draw.io to PNG"
+          file_pattern: "assets/**/*.png"
