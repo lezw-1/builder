@@ -1,7 +1,6 @@
 # Principles
 
 ## Visualization
-
 - Use **draw.io** for all architecture diagrams — store `.drawio` files in `assets/diagrams/`.
 
 ## Layered Architecture
