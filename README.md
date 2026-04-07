@@ -4,6 +4,8 @@ Claude Code configuration with rules and skills for autonomous development.
 
 ## Contents
 
+<img src="assets/diagrams/architecture.png" alt="Architecture" width="600" height="500" />
+
 - `.claude/rules/` — passive instructions Claude always follows (coding style, principles, git workflow)
 - `.claude/skills/` — active workflows Claude executes on demand (PRD generation, feature conversion)
 - `.claude/memory/` — persistent context Claude retains across sessions (user preferences, project state) - not handled by git
