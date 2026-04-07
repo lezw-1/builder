@@ -4,10 +4,10 @@ Claude Code configuration with rules and skills for autonomous development.
 
 <img src="assets/diagrams/architecture.png" alt="Architecture" width="600" height="500" />
 
+- `script.sh` — executes Claude autonomously to build new features from a PRD
 - `.claude/rules/` — passive instructions Claude always follows 
 - `.claude/skills/` — active workflows Claude executes on demand 
 - `.claude/memory/` — persistent context Claude retains across sessions (not handled by git)
-- `script.sh` — executes Claude autonomously to build new features from a PRD
 
 ## Usage
 
