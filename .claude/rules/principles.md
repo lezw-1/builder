@@ -1,16 +1,11 @@
 # Principles
 
-## Keep It Simple
-- Choose the **simplest solution that works**.  
-- Favor code that’s **easy to remove**, not just easy to extend.  
+## Critical
+- When choosing between readability and performance, **choose readability** — only optimize after profiling proves the need.
+- When a utility is used in only one place, **inline it** — don’t extract to a shared module.
+- When choosing between two approaches, **choose the one that’s easier to delete**.
+- When duplicating logic for a third time, **extract it** — two is fine, three is a pattern.
 
-## Don’t Repeat Yourself
-- Every piece of knowledge should have **one authoritative source**.  
-- Duplicate logic or constants are **bugs waiting to happen**.  
-
-## Single Responsibility
-- Each class should have **one clear purpose**.  
-- If you need to say “does X **and** Y,” it should probably be **two classes**.  
-
-## Open/Closed
-- **Extend functionality** with new code, don’t modify code that already works.
+## Preferred
+- When adding functionality, **extend with new code** rather than modifying stable code.
+- When a class needs the word “and” to describe its purpose, **split it into two**.

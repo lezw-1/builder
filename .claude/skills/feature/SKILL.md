@@ -1,19 +1,16 @@
 ---
-name: prd
-description: 'Generate a feature descirption.'
-user-invocable: true
+name: feature
+description: Feature description
 ---
 
 ## Feature: [Name]
 
 **What:** [One sentence description]
-**Why:** [Problem it solves]
-**Who:** [Target user]
 **Status:** Draft | In Progress | Done
 
 ---
 
-### Implementation Details
+### Details
 
 **Frontend:**
 
@@ -41,21 +38,15 @@ user-invocable: true
 
 ---
 
-### Tasks
-
-| ID  | Task | Assignee | Est. |
-| --- | ---- | -------- | ---- |
-| T1  | ...  | Frontend | 2h   |
-| T2  | ...  | Backend  | 3h   |
-
----
-
 ### Acceptance Criteria
 
-- Given [...], when [...], then [...]
+Each criterion must be verifiable, not vague. "Works correctly" is bad. "Button shows confirmation dialog before deleting" is good.
 
----
+- [ ] Specific verifiable criterion
+- [ ] Another criterion
+- [ ] Typecheck/lint passes
 
-### Done When
+**Important:**
 
-[Measurable success condition]
+- Acceptance criteria must be concrete and testable
+- Include quality checks (typecheck, lint) as criteria

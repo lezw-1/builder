@@ -2,6 +2,10 @@
 
 Claude Code configuration with rules and skills for autonomous development.
 
+Spec driven is used spec-first approach: well thought-out spec is written first, then used in the AI-assisted development workflow.
+
+Research → Plan → Implement → Validate. Clear context between each. Save everything to a sym-linked thoughts/ directory (use npx humanlayer thoughts init).
+
 <img src="assets/diagrams/architecture.png" alt="Architecture" width="600" height="500" />
 
 - `script.sh` — executes Claude autonomously to build new features from a PRD
@@ -25,3 +29,12 @@ Claude reads `prd.json`, picks the highest priority unfinished story, implements
 ## References
 
 - Inspired by: https://github.com/snarktank/ralph
+
+## ToDo 
+
+- insert Testing
+
+
+## workflow
+
+create (done) -> analyze (wip)-> plan (open) -> implement (open) -> test (open)
