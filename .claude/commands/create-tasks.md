@@ -28,4 +28,3 @@ Create a detailed implementation plan for a specific feature using the task SKIL
 8. Create a task for creating a feature branch from `dev` named `feature/<feature-name>` (e.g. `feature/add-encryption`) and save it as the first task file (e.g. `01-create-branch.md`) in `/features/<feature-folder>/tasks/` using the SKILL template
 9. Save each remaining task as a separate file in `/features/<feature-folder>/tasks/` using the SKILL template (e.g. `02-setup-workflow.md`, `03-add-encryption.md`)
 10. Create a dedicated test task that covers unit and integration tests for the feature, following the testing pyramid — save it as the last task file before documentation (e.g. `05-tests.md`)
-11. Present the plan for review and iterate based on feedback
