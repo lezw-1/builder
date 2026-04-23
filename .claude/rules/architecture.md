@@ -2,6 +2,7 @@
 
 ## Critical — Structure
 
+- **Decouple components** - when creating new component add everything to a own folder.
 - **Use interfaces at layer boundaries** — allow substitution and decoupling between layers.
 - **Reject circular dependencies** — if two layers depend on each other, extract a shared interface.
 

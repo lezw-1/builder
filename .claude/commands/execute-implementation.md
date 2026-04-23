@@ -30,5 +30,4 @@ Iterate over and implement all tasks from a feature's `/features/<feature-folder
    d. Follow the task's **Steps** section in order
    e. Verify each **Acceptance Criteria** item passes
    f. Update the task file's **Status** to `Done`
-   g. Present a summary of changes made and ask the user to review before continuing
 4. After all tasks are done, present a final summary of all changes and files affected
