@@ -2,25 +2,22 @@
 
 ## Critical — Structure
 
-- **Decouple components** - each component owns its folder (e.g. ./frontend/) and all its configuration (.e.g ./frontend/package.json) — nothing component-specific belongs at the project root.
 - **Use interfaces at layer boundaries** — allow substitution and decoupling between layers.
 - **Reject circular dependencies** — if two layers depend on each other, extract a shared interface.
+- **Decouple components** - each component owns its folder (e.g. ./frontend/) and all its configuration (.e.g ./frontend/package.json) — nothing component-specific belongs at the project root.
+- **Design for the target platform** — keep deployment platform in mind (e.g. Kubernetes, Docker, Amazon Web Services)
+- **Keep environments/stages explicit** — design for different stages (e.g. prod, dev, test, local)
 
 ## Critical — Resilience
 
 - **Design for failure** — implement retries, circuit breakers, and fallbacks.
-- **Run as stateless processes** — persist state only in backing services.
-- **Scale out via the process model** — not by making processes bigger.
-- **Enable fast startup and graceful shutdown** — treat processes as ephemeral.
+- **Run as stateless** — persist state only in backing components.
 
 ## Critical — Infrastructure
 
 - **Use API gateways** — single entry point for requests, authentication, and routing.
-- **Implement service discovery** — allow microservices to locate and communicate dynamically.
-- **Export services via port binding** — the app is self-contained.
-- **Treat backing services as attached resources** — databases, queues, and caches via URL/config.
+- **Treat backing components as attached resources** — databases, queues, and caches via URL/config.
 - **Provision infrastructure via code (IaC)** — not manual steps.
-- **Run admin tasks as one-off processes** — in the same environment as the app.
 
 ## Preferred
 

@@ -21,13 +21,14 @@ Iterate over and implement all tasks from a feature's `/features/<feature-folder
 
 ## Steps
 
-1. Ask the user which feature to implement (or accept as input)
-2. List all task files in `/features/<feature-folder>/tasks/` sorted by filename (e.g. `01-`, `02-`)
-3. For each task file in order:
+1. Run `/clear` to clear context
+2. Ask the user which feature to implement (or accept as input)
+3. List all task files in `/features/<feature-folder>/tasks/` sorted by filename (e.g. `01-`, `02-`)
+4. For each task file in order:
    a. Run `/clear` to clear context and cache before starting the next task
    b. Read the task file
    c. Skip if **Status** is already `Done`
    d. Follow the task's **Steps** section in order
    e. Verify each **Acceptance Criteria** item passes
    f. Update the task file's **Status** to `Done`
-4. After all tasks are done, present a final summary of all changes and files affected
+5. After all tasks are done, present a final summary of all changes and files affected

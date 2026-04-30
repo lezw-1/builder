@@ -22,11 +22,12 @@ Run and verify the test task from a feature's `/features/<feature-folder>/tasks/
 
 ## Steps
 
-1. Ask the user which feature to test (or accept a feature name as input)
-2. Read `feature.md` from the matching folder in `/features/` for acceptance criteria
-3. Find and read the test task file from `/features/<feature-folder>/tasks/`
-4. Follow the task's **Steps** section to write and run the tests
-5. Run the full test suite and verify all tests pass
-6. Verify each **Acceptance Criteria** item in the task file passes
-7. Update the task file's **Status** to `Done`
-8. Present a summary of test results and coverage
+1. Run `/clear` to clear context
+2. Ask the user which feature to test (or accept a feature name as input)
+3. Read `feature.md` from the matching folder in `/features/` for acceptance criteria
+4. Find and read the test task file from `/features/<feature-folder>/tasks/`
+5. Follow the task's **Steps** section to write and run the tests
+6. Run the full test suite and verify all tests pass
+7. Verify each **Acceptance Criteria** item in the task file passes
+8. Update the task file's **Status** to `Done`
+9. Present a summary of test results and coverage

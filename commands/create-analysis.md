@@ -19,14 +19,14 @@ Analyze the codebase for a specific feature using the analyze SKILL.
 
 ## Rules
 
+- When identifying **what exist or what does not exist**, analyze ALL required components — including interfaces, ingresses, services, deployments, config maps, and any other infrastructure — not just application code.
+
 ## Steps
 
-1. Invoke the analysis SKILL to get the template
-2. Ask the user which feature to analyze (or accept a feature name as input)
-3. Read `feature.md` from the matching folder in `/features/` to use as scope and context
-4. If the user mentions additional files (tickets, docs, JSON), read them FULLY as well
-5. Break down the research into composable areas (components, patterns, architecture)
-6. Research the codebase using Glob, Grep, and Read to find files, patterns, and connections
-7. Synthesize findings with specific file paths and line numbers
-8. Save the analysis as `analysis.md` inside the feature's folder using the SKILL template
-9. Present a concise summary and ask if the user has follow-up questions
+1. Run `/clear` to clear context
+2. Invoke the analysis SKILL to get the template
+3. Ask the user which feature to analyze (or accept a feature name as input)
+4. Read `feature.md` from the matching folder in `/features/` to use as scope and context
+5. Research the codebase using Glob, Grep, and Read to find files, patterns, and connections
+6. Fill in the template based on your findings
+7. Save the analysis as `analysis.md` inside the feature's folder

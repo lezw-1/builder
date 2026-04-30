@@ -33,6 +33,7 @@ Claude reads `prd.json`, picks the highest priority unfinished story, implements
 ## ToDo 
 
 - insert Testing
+- insert dependency management
 
 
 ## workflow

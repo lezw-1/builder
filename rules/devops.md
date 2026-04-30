@@ -10,9 +10,9 @@
 
 - **Pin exact versions** for all dependencies — avoid floating ranges (`^`, `~`, `*`).
 - **Use and commit a lockfile** (`package-lock.json`, `poetry.lock`, etc.).
-- **Document required runtime versions** in `.nvmrc`, `.python-version`, or equivalent.
+- **Document required runtime versions** in README.
 - **Declare all tooling as project dependencies** — never rely on globally installed tools.
-- **Keep dev/prod parity** — keep environments as similar as possible.
+- **Keep environments parity** — keep environments as similar as possible.
 
 ## Critical — Observability
 
