@@ -1,4 +1,4 @@
-## Builder
+## Contents
 
 Claude Code configuration with rules and skills for spec-driven, autonomous development.
 
@@ -50,7 +50,7 @@ assets/
 | `style.md` | Code style |
 | `testing.md` | Testing pyramid, behavior-based tests |
 
-## Branches
+## Links
 
 - `prod` — stable, production-ready config
 - `dev` — active development
