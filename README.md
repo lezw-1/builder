@@ -58,3 +58,5 @@ assets/
 ## References
 
 - Inspired by: https://github.com/snarktank/ralph
+
+- https://github.com/kirodotdev/Kiro
