@@ -57,11 +57,11 @@ https://{domain}
 
 ## Links
 
-- [Label](url)
+- [Label](url) — short description
 
 ## Inspired by (optional)
 
-- [Label](url)
+- [Label](url) — short description
 
 **Important:**
 
@@ -133,10 +133,10 @@ https://notify.example.com
 
 ## Links
 
-- [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging)
-- [Celery Docs](https://docs.celeryq.dev)
+- [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging) — push notification delivery platform
+- [Celery Docs](https://docs.celeryq.dev) — distributed task queue used for async job processing
 
 ## Inspired by
 
-- [The Twelve-Factor App](https://12factor.net)
+- [The Twelve-Factor App](https://12factor.net) — methodology for building scalable, maintainable services
 ````
