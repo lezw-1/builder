@@ -65,6 +65,7 @@ https://{domain}
 
 **Important:**
 
+- In the `Components` section, mark entries that correspond to paths in `.gitignore` with `(ignored)` after the description
 - Only use the sections defined in this skill — do not add extra sections
 - Keep it short — one sentence per concept, no filler
 - Code blocks for every command
