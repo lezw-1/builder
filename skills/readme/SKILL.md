@@ -55,13 +55,17 @@ http://{domain}
 https://{domain}
 ```
 
-## Links
+## Links (optionaL)
 
 - [Label](url) — short description
 
 ## Inspired by (optional)
 
 - [Label](url) — short description
+
+## Backlog (optional)
+
+- [ ] [Task or improvement]
 
 **Important:**
 
@@ -70,6 +74,9 @@ https://{domain}
 - Code blocks for every command
 - No badges, no emojis, no marketing language
 - `Deployment` section is optional — omit if not applicable
+- `Inspired by` section is optional — omit if not applicable
+- `Links` section is optional — omit if not applicable
+- `Backlog` section is optional — omit if not applicable
 - Do not commit — let the user review first
 
 ---
@@ -139,4 +146,9 @@ https://notify.example.com
 ## Inspired by
 
 - [The Twelve-Factor App](https://12factor.net) — methodology for building scalable, maintainable services
+
+## Backlog
+
+- [ ] Add support for SMS delivery via Twilio
+- [ ] Implement retry logic for failed push notifications
 ````
