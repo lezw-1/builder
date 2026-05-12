@@ -65,6 +65,7 @@ https://{domain}
 
 **Important:**
 
+- Only use the sections defined in this skill — do not add extra sections
 - Keep it short — one sentence per concept, no filler
 - Code blocks for every command
 - No badges, no emojis, no marketing language
