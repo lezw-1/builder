@@ -63,10 +63,6 @@ https://{domain}
 
 - [Label](url) — short description
 
-## Backlog (optional)
-
-- [ ] [Task or improvement]
-
 **Important:**
 
 - Only use the sections defined in this skill — do not add extra sections
@@ -76,7 +72,7 @@ https://{domain}
 - `Deployment` section is optional — omit if not applicable
 - `Inspired by` section is optional — omit if not applicable
 - `Links` section is optional — omit if not applicable
-- `Backlog` section is optional — omit if not applicable
+- Backlog goes in a separate `BACKLOG.md` file, not in the README
 - Do not commit — let the user review first
 
 ---
@@ -146,9 +142,4 @@ https://notify.example.com
 ## Inspired by
 
 - [The Twelve-Factor App](https://12factor.net) — methodology for building scalable, maintainable services
-
-## Backlog
-
-- [ ] Add support for SMS delivery via Twilio
-- [ ] Implement retry logic for failed push notifications
 ````
