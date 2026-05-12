@@ -29,4 +29,5 @@ Create a detailed implementation plan for a specific feature using the task SKIL
 6. Create a task for creating a feature branch from `dev` named `feature/<feature-name>` (e.g. `feature/add-encryption`) and save it as the first task file (e.g. `01-create-branch.md`) in `/features/<feature-folder>/tasks/` using the SKILL template
 7. Save each remaining task as a separate file in `/features/<feature-folder>/tasks/` using the SKILL template (e.g. `02-setup-workflow.md`, `03-add-encryption.md`)
 8. Create a dedicated test task that use rule testing.md — save it as the last task file before documentation (e.g. `05-tests.md`)
-9. Create a `changelog.md` file in the feature folder listing all planned changes grouped by task
+9. Create a README task using the readme SKILL — it should update the project `README.md` to reflect the feature changes; save it as the final task file (e.g. `06-readme.md`)
+10. Create a `changelog.md` file in the feature folder listing all planned changes grouped by task
