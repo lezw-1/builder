@@ -1,0 +1,3 @@
+- dedicated test implementation task
+- should test the deployment of the feature (local deployment)
+- write a test cases that can be executed by a "execute-test" command

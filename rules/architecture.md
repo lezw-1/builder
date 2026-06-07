@@ -2,6 +2,7 @@
 
 ## Critical — Structure
 
+- **Separate concerns into layers** — always split route handlers, business logic, and data access into distinct layers (e.g. `routes/`, `service/`, `repository/`), regardless of current size.
 - **Use interfaces at layer boundaries** — allow substitution and decoupling between layers.
 - **Reject circular dependencies** — if two layers depend on each other, extract a shared interface.
 - **Decouple components** - each component owns its folder (e.g. ./frontend/) and all its configuration (.e.g ./frontend/package.json) — nothing component-specific belongs at the project root.

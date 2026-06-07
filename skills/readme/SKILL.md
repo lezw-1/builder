@@ -16,6 +16,10 @@ description: Write or update a README for the current project or component
 - **[Component]** — [what it does]
 - **[Component]** — [what it does]
 
+## Prerequisites (optional)
+
+- **[Dependency]** — [what it is and where to install it]
+
 ## Deployment (optional)
 
 ### Local
@@ -69,6 +73,7 @@ https://{domain}
 - Keep it short — one sentence per concept, no filler
 - Code blocks for every command
 - No badges, no emojis, no marketing language
+- `Prerequisites` section is optional — omit if not applicable
 - `Deployment` section is optional — omit if not applicable
 - `Inspired by` section is optional — omit if not applicable
 - `Links` section is optional — omit if not applicable
