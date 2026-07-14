@@ -12,35 +12,36 @@ description: Feature description
 
 ### Details
 
+Describe intent and behavior — not implementation details. No file names, function names, column names, or specific code changes.
+
 **Frontend:**
 
-- [component or UI detail]
-- [state management approach]
-- [validation rules]
+- [user-facing behavior or UI element]
+- [interaction or validation rule]
 
 **Backend:**
 
-- [business logic]
-- [data model changes]
+- [business rule or operation]
+- [data change or side effect]
 
 **Database:**
 
-- [new tables or fields]
-- [migrations needed]
+- [data that needs to be stored or removed]
+- [schema change required, without specifics]
 
 **DevOps:**
 
-- [deployment changes (Helm, Docker, CI/CD)]
-- [observability: metrics, logs, health checks]
-- [environment-specific config or secrets]
+- [infrastructure or deployment change needed]
+- [observability requirement]
+- [environment-specific config needed]
 
 **Security:**
 
-- [auth/encryption considerations]
+- [auth or access control requirement]
 
 **Third-party / Integrations:**
 
-- [external services used]
+- [external service interaction]
 
 ---
 
@@ -57,6 +58,7 @@ Each criterion must be verifiable, not vague. "Works correctly" is bad. "Button 
 - Acceptance criteria must be concrete and testable
 - Include quality checks (typecheck, lint) as criteria
 - Keep the feature **simple and focused** — avoid over-engineering or adding scope beyond what is described
+- Keep the feature description **generic** — describe intent and behavior, not implementation details (no file names, function names, or specific code changes)
 
 ---
 
@@ -74,34 +76,34 @@ Each criterion must be verifiable, not vague. "Works correctly" is bad. "Button 
 
 **Frontend:**
 
-- Add "Delete Account" button in Settings > Danger Zone
-- Show confirmation dialog requiring user to type "DELETE" before proceeding
+- "Delete Account" button in Settings > Danger Zone
+- Confirmation dialog requiring the user to type "DELETE" before proceeding
 - Redirect to login page after successful deletion
 
 **Backend:**
 
-- Add endpoint to delete user account
-- Revoke all active sessions and API tokens
+- Delete account endpoint
+- Revoke all active sessions and API tokens on deletion
 
 **Database:**
 
-- Add `deleted_at` timestamp column to `users` table
-- Migration: `add_deleted_at_to_users`
+- Soft-delete accounts; preserve data but prevent access
+- Schema migration required
 
 **DevOps:**
 
 - No new infrastructure required
-- Expose `/healthz` liveness check if not already present
-- Ensure `DELETION_ENABLED` env var is set per environment
+- Liveness check required if not already present
+- Feature flag to enable/disable account deletion per environment
 
 **Security:**
 
-- Require re-authentication (password confirmation) before deletion
-- Apply least privilege: only the account owner can delete their own account
+- Re-authentication (password confirmation) required before deletion
+- Only the account owner may delete their own account
 
 **Third-party / Integrations:**
 
-- Cancel active Stripe subscriptions on deletion
+- Cancel active billing subscriptions on deletion
 
 ---
 
