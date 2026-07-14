@@ -23,6 +23,13 @@
   ```
 
 - When writing executable code, **use a one-liner comment** (e.g. `# This executes a scraper`).
+- When separating major sections, groups, or classes inside a file, **use a banner comment**:
+
+  ```
+  # ============================================================================
+  # General
+  # ============================================================================
+  ```
 - **Add a one-liner comment for every constant variable** — describe its purpose inline:
 
   ```ts

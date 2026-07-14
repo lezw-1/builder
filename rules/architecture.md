@@ -24,3 +24,4 @@
 
 - When creating a diagram, **use draw.io** and store `.drawio` files in `assets/diagrams/`.
 - When adding a new component or updating component, **create or update the architecture diagram** to reflect the change.
+- When listing services/components (e.g. in `README.md`, `helmfile.yaml`, `helm/envs/*.yaml`), **use alphabetical order**.
