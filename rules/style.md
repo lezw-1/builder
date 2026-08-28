@@ -8,7 +8,6 @@
 
 ## Critical — Comments
 
-- **Write comments to explain why**, not what — the code itself should explain what.
 - **Add comments for non-obvious algorithms**, workarounds, or external constraints.
 - When using complex commands (e.g. Shell/Bash commands with more than 20 characters), **comment them**.
 - **Add a short comment** (maximum 8 words) for every function, class, etc.
@@ -30,10 +29,11 @@
   # General
   # ============================================================================
   ```
+
 - **Add a one-liner comment for every constant variable** — describe its purpose inline:
 
   ```ts
-  const [prompt, setPrompt] = useState(""); // User's research prompt input
+  const [prompt, setPrompt] = useState(''); // User's research prompt input
   const [loading, setLoading] = useState(false); // True while a run is in flight
   const [run, setRun] = useState<RunStatus | null>(null); // Latest run status from backend
   const [error, setError] = useState<string | null>(null); // Network or API error message
