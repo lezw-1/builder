@@ -69,7 +69,6 @@ https://{domain}
 
 **Important:**
 
-- In the `Components` section, mark entries that correspond to paths in `.gitignore` with `(ignored)` after the description
 - Only use the sections defined in this skill — do not add extra sections
 - Keep it short — one sentence per concept, no filler
 - Code blocks for every command
@@ -77,7 +76,7 @@ https://{domain}
 - `Prerequisites` section is optional — omit if not applicable
 - `Deployment` section is optional — omit if not applicable
 - `Inspired by` section is optional — omit if not applicable
-- `Links` section is optional — omit if not applicable
+- `Useful Links` section is optional — omit if not applicable
 - Backlog goes in a separate `BACKLOG.md` file, not in the README
 - Do not commit — let the user review first
 
@@ -140,7 +139,7 @@ http://notify.example.com
 https://notify.example.com
 ```
 
-## Links
+## Useful Links
 
 - [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging) — push notification delivery platform
 - [Celery Docs](https://docs.celeryq.dev) — distributed task queue used for async job processing

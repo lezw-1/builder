@@ -13,6 +13,7 @@
 
 - **Design for failure** — implement retries, circuit breakers, and fallbacks.
 - **Run as stateless** — persist state only in backing components.
+- **Prefer a sidecar container over a Helm hook Job** for provisioning/seeding that must survive pod restarts — a hook Job (`post-install`/`post-upgrade`) only reruns on an Argo CD sync, not on Pod recreation, so any Job-seeded state backed by non-persistent storage (e.g. an in-memory dev-mode datastore) silently disappears until the next sync. A sidecar in the same Pod can loop and reconcile on every restart, regardless of cause.
 
 ## Critical — Infrastructure
 
