@@ -1,0 +1,3 @@
+- [] add to skills, that when developing locally to use virtual envs like (pyenv, nvm). at start there should be a initial creation of the envs.
+- [] when testing software. use container execution.
+- [] use helmfile and nerdctl as technologies.
